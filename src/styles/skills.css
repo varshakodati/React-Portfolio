@@ -1,0 +1,123 @@
+.skills-section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-image: url("../assets/skills.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: #1e3a8a;
+}
+
+/* 2 Boxes per row */
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+/* Outer Skill Box (Like About Card Feel) */
+.skill-box {
+  background: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+
+  /* 3D shadow effect */
+  box-shadow: 
+    10px 10px 0px #2563eb;  /* hard shadow */
+
+  border: 2px solid #2563eb;
+
+  transition: 0.3s ease;
+  opacity: 0;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+.skill-box:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 
+    12px 12px 0px #1e3a8a;
+}
+
+
+/* Category Heading */
+.skill-box h3 {
+  margin-bottom: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+/* Remove default bullets */
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Skills line by line */
+.skill-box li {
+  margin: 12px 0;
+}
+
+/* Oval Skill Pills */
+.skill-box li span {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect for each skill */
+.skill-box li span:hover {
+  background: whitesmoke;
+  color: burlywood;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.skill-box:nth-child(odd) {
+  animation-name: slideFromLeft;
+}
+
+.skill-box:nth-child(even) {
+  animation-name: slideFromRight;
+}

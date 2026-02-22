@@ -1,0 +1,76 @@
+.projects-section {
+  padding: 100px 20px;
+  background-image: url("../assets/projects.jpg");  /* 👈 no ./ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+.projects-title {
+  font-size: 34px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  color: #222;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* center horizontally */
+  justify-content: center; /* center vertically */
+  gap: 40px;               /* 🔥 proper spacing between boxes */
+  
+}
+
+/* Default card */
+.project-card {
+  width: 70%;
+  max-width: 750px;
+  background: lightblue;
+  padding: 30px;
+  border-radius: 18px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  text-align: center;      /* 🔥 content center lo */
+  border: 1px solid #e0e0e0;
+}
+
+/* 🔥 Strong Bright Hover Effect */
+.project-card:hover {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  transform: translateY(-8px) scale(1.02);
+  border: 1px solid #d0d0d0;
+}
+
+/* Remove active if not using click */
+.project-card.active {
+  display: none;
+}
+
+/* Description */
+.project-description {
+  margin-top: 15px;
+  color: #555;
+  line-height: 1.7;
+}
+.project-skills {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;
+    padding: 22px;
+  }
+
+  .projects-title {
+    font-size: 26px;
+  }
+}

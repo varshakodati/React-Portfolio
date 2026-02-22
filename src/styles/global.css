@@ -1,0 +1,29 @@
+
+.portfolio-title {
+  width: 100%;
+  text-align: center;
+
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 0;
+
+  background-image:url("../assets/title.jpg");
+  background-size: cover;
+}
+
+
+
+.animate {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
