@@ -47,3 +47,25 @@ This project showcases my skills, projects, and experience as a Frontend Develop
 ---
 
 ## 📂 Folder Structure
+
+src/
+├── components/
+├── pages/
+├── App.js
+├── index.js
+
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/React-Portfolio.git
+
+cd React-Portfolio
+
+npm install
+
+npm start
