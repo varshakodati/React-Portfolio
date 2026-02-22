@@ -1,18 +1,49 @@
-# React + Vite
+# 🌐 React Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built using React.  
+This project showcases my skills, projects, and experience as a Frontend Developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+(Add your deployed link here after deployment)
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Tech Stack
 
-Note: This will impact Vite dev & build performances.
+- React.js
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Responsive Design (Flexbox & Media Queries)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Features
+
+- Reusable React components
+- Dynamic rendering using props and state
+- Responsive layout for mobile, tablet, and desktop
+- Smooth navigation between sections
+- Clean and scalable component-based architecture
+
+---
+
+## 💼 Projects Included
+
+### 🍽️ Restaurant Website
+- Developed a responsive restaurant website using HTML, CSS, and JavaScript.
+- Implemented dynamic menu display using DOM manipulation.
+- Built a table reservation form with input validation.
+- Applied responsive design using Flexbox and media queries.
+
+### 🌐 Portfolio Website
+- Built using React with reusable components.
+- Dynamic rendering of skills and projects.
+- Modern UI with clean structure.
+- Optimized for performance and maintainability.
+
+---
+
+## 📂 Folder Structure
